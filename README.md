@@ -1,8 +1,9 @@
+
 # React Initial State Lab
 
 ## Overview
 
-In this lab, you'll set initial state in a React component and distinguish between state and props. 
+In this lab, you'll set initial state in a React component and distinguish between state and props.
 
 ## Image slider
 
@@ -10,7 +11,7 @@ Let's pretend we're making an awesome slider for our new portfolio site. Natural
 
 1. In the `components/ImageSlider.js` file, create an `ImageSlider` React component.
 2. Its initial state should have a property `currentSlideIndex` that starts at `0`.
-3. It should render out the text `'I am on slide <CURRENT_SLIDE>'`, where `<CURRENT_SLIDE>` is the value of 
+3. It should render out the text `'I am on slide <CURRENT_SLIDE>'`, where `<CURRENT_SLIDE>` is the value of
 `currentSlideIndex`
 
 ## A bomb timer
