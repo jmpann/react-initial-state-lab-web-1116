@@ -10,19 +10,33 @@ class Bomb extends React.Component{
     }
   }
   render(){
-    if (this.state.secondsLeft > 0){
-    return(
-      <p>{this.state.secondsLeft} seconds left before I go boom!</p>
-      )
-    }
-    else{
-      return(
-          <p>Boom!</p>
-
-      )
+    ///THIS IS VALID! you can have if statements in your render function. better way would be to do a callback
+    // if (this.state.secondsLeft > 0){
+    // return(
+    //   <p>{this.state.secondsLeft} seconds left before I go boom!</p>
+    //   )
+    // }
+    // else{
+    //   return(
+    //       <p>Boom!</p>
+    //
+    //   )
+    boom(state).bind(this)
     }
   }
 }
+
+function boom(state){
+  if (this.state.secondsLeft > 0){
+    return(
+      <p>{this.state.secondsLeft} seconds left before I go boom!</p>
+    )
+  }
+  else{
+    return(
+      <p>Boom!</p>
+    }
+  }
 
 Bomb.defaultProps = {
   initialCount: 20
